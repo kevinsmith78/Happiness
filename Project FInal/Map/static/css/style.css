@@ -12,12 +12,22 @@ html {
   height: 50%;
 }
 
-.legend {
-  background-color: rgb(253, 251, 251);
-  line-height: 24px;
-  color: #555;
-  padding: 6px;
+/* legend box */
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
+
+.legend {
+  background-color: “black”;
+  line-height: 25px;
+  color: #555;
+  width: auto;
+}
+
 .legend i {
   width: 18px;
   height: 18px;
