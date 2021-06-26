@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+<head>
+    <meta charset='UTF-8' name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>
+        World Happiness Report
+    </title>
+    <link rel='stylesheet' href='./static/css/custom.css'>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>WORLD HAPPINESS REPORT<h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Top Ranked Countries 2019</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div id="map" style="width: 800px; height: 400px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Data (2019)</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <embed type="text/html"
+                            src="https://kevinsmith78.github.io/Happiness/Project%20FInal/Table/table.html" width="800"
+                            height="400">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Correlation (Tableau)</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="container">
+                            <div class='tableauPlaceholder' id='viz1624677743340' style='position: relative'>
+                                <noscript><a href='#'><img alt='World Happiness '
+                                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HappyAnalysis&#47;WorldHappiness&#47;1_rss.png'
+                                            style='border: none' /></a></noscript><object class='tableauViz'
+                                    style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                    <param name='embed_code_version' value='3' />
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='HappyAnalysis&#47;WorldHappiness' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image'
+                                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HappyAnalysis&#47;WorldHappiness&#47;1.png' />
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='language' value='en-US' />
+                                </object>
+                            </div>
+                            <script
+                                type='text/javascript'>                    var divElement = document.getElementById('viz1624677743340'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '800px'; vizElement.style.height = '400px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5>Correlation by Type</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="corr.html">
+                            <img src="https://kevinsmith78.github.io/Happiness/Corr.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel='stylesheet' href='static/css/custom.css'>
+
+    <!-- Plotly and D3 JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Leaflet JS -->
+    <script src='https://unpkg.com/leaflet@1.6.0/dist/leaflet.js'
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!-- API Key -->
+    <script type='text/javascript' src='Map/config.js'></script>
+    <!-- JS -->
+    <script type='text/javascript' src='Map/static/js/app.js'></script>
+    <script src='./test/app.js'></script>
+    <script src='./static/js/pie_chart.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.1/chart.min.js'></script>
+
+</body>
+
+</html>
