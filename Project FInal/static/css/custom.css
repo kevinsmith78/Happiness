@@ -47,6 +47,21 @@ h5{
   font-size: 30px;  
 }
 
+h6{
+  color:white;
+  font-size: 16px;
+  font-style: bold;
+  text-align: center;
+  ;
+}
+
+
+.box{
+  background-color: grey;
+  float: right;
+  
+ }
+
 .corr{
   background-color: white;
 }
